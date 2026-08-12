@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouyashree R - Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Liberation+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Liberation Sans', 'Helvetica Neue', Arial, sans-serif;
+      color: #111111;
+      background-color: #f4f5f7;
+      padding: 2rem 1rem;
+      line-height: 1.35;
+      font-size: 10.5pt;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 2.5rem 3rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border-radius: 4px;
+    }
+
+    .action-bar {
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-print {
+      background: #00f0ff;
+      background: linear-gradient(135deg, #7c3aed, #2563eb);
+      color: #ffffff;
+      border: none;
+      padding: 0.65rem 1.25rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+    }
+
+    .btn-print:hover {
+      opacity: 0.9;
+    }
+
+    /* Resume Header */
+    .header {
+      text-align: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .name {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+      color: #000000;
+      text-transform: uppercase;
+    }
+
+    .contact-info {
+      font-size: 9.5pt;
+      color: #333333;
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-info a {
+      color: #0033cc;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .separator {
+      margin: 0 0.4rem;
+      color: #666666;
+    }
+
+    /* Section Styling */
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #000000;
+      border-bottom: 1px solid #111111;
+      padding-bottom: 0.15rem;
+      margin-top: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .objective-text {
+      text-align: justify;
+      font-size: 10pt;
+      color: #222222;
+    }
+
+    /* Education & Experience Rows */
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .item-sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 10pt;
+      margin-bottom: 0.2rem;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    ul.bullet-list {
+      list-style-type: disc;
+      margin-left: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    ul.bullet-list li {
+      margin-bottom: 0.15rem;
+      font-size: 9.8pt;
+      text-align: justify;
+    }
+
+    .skill-row {
+      font-size: 10pt;
+      margin-bottom: 0.25rem;
+    }
+
+    .skill-label {
+      font-weight: 700;
+    }
+
+    .cert-list {
+      list-style-type: disc;
+      margin-left: 1.4rem;
+    }
+
+    .cert-list li {
+      font-size: 9.8pt;
+      margin-bottom: 0.2rem;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .action-bar {
+        display: none;
+      }
+      .resume-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="action-bar">
+    <a href="../index.html" class="btn-print" style="background: #475569;">← Back to Portfolio</a>
+    <button onclick="window.print()" class="btn-print">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <div class="resume-container">
+    
+    <!-- HEADER -->
+    <div class="header">
+      <div class="name">BOUYASHREE R</div>
+      <div class="contact-info">
+        7598117754 <span class="separator">—</span> <a href="mailto:bouyashreeraja@gmail.com">bouyashreeraja@gmail.com</a>
+      </div>
+      <div class="contact-info">
+        <a href="https://www.linkedin.com/in/bouyashree-raja-a77353328" target="_blank">https://www.linkedin.com/in/bouyashree-raja-a77353328</a>
+      </div>
+      <div class="contact-info">
+        <a href="https://github.com/bouyashreeraja-png" target="_blank">https://github.com/bouyashreeraja-png</a>
+      </div>
+    </div>
+
+    <!-- CAREER OBJECTIVE -->
+    <div class="section-title">CAREER OBJECTIVE</div>
+    <p class="objective-text">
+      Computer Science Engineering student with hands-on experience in Java full-stack development, Python programming, web technologies, databases, artificial intelligence, and cybersecurity. Interested in software development and AI-driven solutions, with a strong passion for learning new technologies and building practical real-world applications.
+    </p>
+
+    <!-- EDUCATION -->
+    <div class="section-title">EDUCATION</div>
+    <div class="item-header">
+      <span>AVS Engineering College, Autonomous</span>
+      <span>2024–2028</span>
+    </div>
+    <div class="item-sub">
+      <span>B.E. Computer Science Engineering</span>
+      <span class="bold">CGPA: 8.2</span>
+    </div>
+
+    <div class="item-header" style="margin-top: 0.3rem;">
+      <span>Government Girls Higher Secondary School, Mallasamudram</span>
+    </div>
+    <div class="skill-row" style="margin-top: 0.1rem;">
+      12th Standard: <span class="bold">458 Marks</span>
+    </div>
+    <div class="skill-row">
+      10th Standard: <span class="bold">367 Marks</span>
+    </div>
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section-title">TECHNICAL SKILLS</div>
+    <div class="skill-row">
+      <span class="skill-label">Programming:</span> C, Python, Java, TypeScript
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">Web Technologies:</span> HTML, CSS, Angular, Spring Boot, Flask, Node.js, Express.js
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">Database:</span> MySQL, SQL
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">AI / ML:</span> OpenCV, DeepFace, Librosa
+    </div>
+    <div class="skill-row">
+      <span class="skill-label">Tools:</span> Git, GitHub, VS Code, Eclipse, PyCharm, Postman
+    </div>
+
+    <!-- INTERNSHIPS -->
+    <div class="section-title">INTERNSHIPS</div>
+    
+    <div class="item-header">
+      <span>Redmind Technologies</span>
+      <span>Java Full Stack Intern — 30–35 Days</span>
+    </div>
+    <ul class="bullet-list">
+      <li>Gained practical exposure to Java full-stack application development.</li>
+      <li>Worked with frontend, backend, database, and application integration.</li>
+    </ul>
+
+    <div class="item-header" style="margin-top: 0.3rem;">
+      <span>CKM Buildbase</span>
+      <span>Java Full Stack Developer Intern — 30–35 Days</span>
+    </div>
+    <ul class="bullet-list">
+      <li>Gained hands-on exposure to Java-based full-stack development.</li>
+      <li>Worked with frontend, backend, database connectivity, and APIs.</li>
+    </ul>
+
+    <!-- PROJECTS -->
+    <div class="section-title">PROJECTS</div>
+
+    <div class="item-header">
+      <span>FeelSync</span>
+    </div>
+    <div class="italic" style="font-size: 9.8pt; margin-bottom: 0.2rem;">
+      AI-Based Real-Time Emotion Recognition and Mental Wellness Application
+    </div>
+    <ul class="bullet-list">
+      <li>Developed an AI-based face and voice detection application for real-time emotion recognition and mental wellness.</li>
+      <li>Combined facial expression and voice analysis to identify emotional states.</li>
+      <li><span class="bold">Technologies:</span> Python, OpenCV, DeepFace, Librosa, Pyttsx3.</li>
+    </ul>
+
+    <div class="item-header" style="margin-top: 0.4rem;">
+      <span>SentinalAI</span>
+    </div>
+    <div class="italic" style="font-size: 9.8pt; margin-bottom: 0.2rem;">
+      AI-Powered Blackmail and Cybersecurity Threat Detection System
+    </div>
+    <ul class="bullet-list">
+      <li>Developed an AI-powered system for detecting potential blackmail attempts and cybersecurity threats.</li>
+      <li>Designed to identify suspicious patterns and potential digital security risks using AI-based analysis.</li>
+    </ul>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section-title">CERTIFICATIONS</div>
+    <ul class="cert-list">
+      <li>Python Programming – Master Mind Techno Solution</li>
+      <li>Python Essentials 1 – Cisco Networking Academy</li>
+      <li>Python with Flask – Master Mind Techno Solution</li>
+      <li>Advanced Java – Master Mind Techno Solution</li>
+      <li>SQL Hiring Secrets Bootcamp – Novi Tech R&D</li>
+    </ul>
+
+    <!-- LANGUAGES -->
+    <div class="section-title">LANGUAGES</div>
+    <div class="skill-row">
+      English <span class="separator">—</span> Tamil
+    </div>
+
+  </div>
+
+</body>
+</html>

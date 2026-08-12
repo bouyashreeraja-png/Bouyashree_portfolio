@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouyashree R | Java Full Stack Developer & AI-ML Enthusiast</title>
+  
+  <!-- Meta Descriptions for SEO -->
+  <meta name="description" content="Portfolio of Bouyashree R - Computer Science Engineering student, Java Full Stack Developer, and AI/ML Enthusiast. Specialized in Java, Python, AI/ML, OpenCV, Angular, and Spring Boot.">
+  <meta name="keywords" content="Bouyashree R, Java Full Stack Developer, AI ML Enthusiast, Computer Science Engineer, Portfolio, FeelSync, SentinalAI">
+  <meta name="author" content="Bouyashree R">
+
+  <!-- Google Fonts: Outfit & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- 3D Antigravity Particle Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Ambient Glow Effects -->
+  <div class="nebula-glow nebula-1"></div>
+  <div class="nebula-glow nebula-2"></div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-dot"></span>
+        <span>BOUYASHREE</span><span class="accent-text">.R</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active" id="nav-item-home">Home</a></li>
+          <li><a href="#about" id="nav-item-about">About</a></li>
+          <li><a href="#skills" id="nav-item-skills">Skills</a></li>
+          <li><a href="#experience" id="nav-item-experience">Experience</a></li>
+          <li><a href="#projects" id="nav-item-projects">Projects</a></li>
+          <li><a href="#education" id="nav-item-education">Education</a></li>
+          <li><a href="#certifications" id="nav-item-certifications">Certifications</a></li>
+          <li><a href="#resume" id="nav-item-resume">Resume</a></li>
+          <li><a href="#contact" id="nav-item-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle Navigation" id="nav-toggle-btn">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Column -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <i data-lucide="sparkles"></i> Computer Science Engineering Student
+            </div>
+
+            <h1 class="hero-name">
+              BOUYASHREE <span class="gradient-text">R</span>
+            </h1>
+
+            <h2 class="hero-title">
+              Computer Science Engineering Student
+            </h2>
+
+            <div class="hero-subtitle">
+              Java Full Stack Developer | AI/ML Enthusiast
+            </div>
+
+            <p class="hero-description">
+              Computer Science Engineering student with hands-on experience in Java full-stack development, Python programming, web technologies, databases, artificial intelligence, and cybersecurity. Passionate about learning new technologies and building practical real-world applications.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+                <i data-lucide="folder-git-2"></i> View My Projects
+              </a>
+              <button onclick="openResumeModal()" class="btn btn-outline" id="btn-hero-resume">
+                <i data-lucide="file-text"></i> View Resume
+              </button>
+              <a href="assets/resume.html" target="_blank" class="btn btn-outline" id="btn-hero-download">
+                <i data-lucide="printer"></i> Print / Save PDF
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <a href="https://github.com/bouyashreeraja-png" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile" id="social-github">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/bouyashree-raja-a77353328" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile" id="social-linkedin">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="mailto:bouyashreeraja@gmail.com" class="social-btn" aria-label="Send Email" id="social-email">
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Profile Image Frame & Orbiting Tech Tags -->
+          <div class="hero-visual">
+            <div class="profile-frame-wrapper">
+              
+              <div class="profile-img-container">
+                <img src="assets/profile.jpg" alt="Bouyashree R - Profile Photo" id="hero-profile-img" onerror="this.onerror=null; this.src='../Downloads/profile pic.jpeg';">
+              </div>
+
+              <!-- Floating Tech Labels -->
+              <span class="tech-tag tag-1"><i data-lucide="code-2"></i> Java</span>
+              <span class="tech-tag tag-2"><i data-lucide="terminal"></i> Python</span>
+              <span class="tech-tag tag-3"><i data-lucide="brain"></i> AI/ML</span>
+              <span class="tech-tag tag-4"><i data-lucide="layers"></i> Angular</span>
+              <span class="tech-tag tag-5"><i data-lucide="cpu"></i> Spring Boot</span>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>About Me</span></h2>
+
+        <div class="about-grid">
+          <div class="glass-card">
+            <p class="about-bio-text">
+              Computer Science Engineering student with hands-on experience in Java full-stack development, Python programming, web technologies, databases, artificial intelligence, and cybersecurity. Interested in software development and AI-driven solutions, with a strong passion for learning new technologies and building practical real-world applications.
+            </p>
+
+            <div class="about-highlights">
+              
+              <div class="highlight-card">
+                <div class="highlight-icon"><i data-lucide="graduation-cap"></i></div>
+                <div class="highlight-title">Education</div>
+                <div class="highlight-value">B.E. CSE</div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon"><i data-lucide="award"></i></div>
+                <div class="highlight-title">CGPA</div>
+                <div class="highlight-value">8.2 / 10</div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon"><i data-lucide="target"></i></div>
+                <div class="highlight-title">Focus</div>
+                <div class="highlight-value">Full Stack & AI/ML</div>
+              </div>
+
+              <div class="highlight-card">
+                <div class="highlight-icon"><i data-lucide="languages"></i></div>
+                <div class="highlight-title">Languages</div>
+                <div class="highlight-value">English & Tamil</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>Technical Skills</span></h2>
+
+        <div class="skills-grid">
+          
+          <!-- Programming -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-category-header">
+              <i data-lucide="code" class="skill-category-icon"></i>
+              <span>Programming</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill"><i data-lucide="cpu"></i> C</span>
+              <span class="skill-pill"><i data-lucide="terminal"></i> Python</span>
+              <span class="skill-pill"><i data-lucide="coffee"></i> Java</span>
+              <span class="skill-pill"><i data-lucide="file-code"></i> TypeScript</span>
+            </div>
+          </div>
+
+          <!-- Web Technologies -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-category-header">
+              <i data-lucide="globe" class="skill-category-icon"></i>
+              <span>Web Technologies</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+              <span class="skill-pill">Angular</span>
+              <span class="skill-pill">Spring Boot</span>
+              <span class="skill-pill">Flask</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Express.js</span>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-category-header">
+              <i data-lucide="database" class="skill-category-icon"></i>
+              <span>Database</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">SQL</span>
+            </div>
+          </div>
+
+          <!-- AI / ML -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-category-header">
+              <i data-lucide="bot" class="skill-category-icon"></i>
+              <span>AI / ML</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill">OpenCV</span>
+              <span class="skill-pill">DeepFace</span>
+              <span class="skill-pill">Librosa</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="glass-card skill-category-card" style="grid-column: 1 / -1;">
+            <div class="skill-category-header">
+              <i data-lucide="wrench" class="skill-category-icon"></i>
+              <span>Development Tools & IDEs</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-pill"><i data-lucide="git-branch"></i> Git</span>
+              <span class="skill-pill"><i data-lucide="github"></i> GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Eclipse</span>
+              <span class="skill-pill">PyCharm</span>
+              <span class="skill-pill">Postman</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>Professional Experience</span></h2>
+
+        <div class="timeline">
+          
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card">
+              <h3 class="timeline-role">Java Full Stack Intern</h3>
+              <div class="timeline-company">Redmind Technologies</div>
+              <div class="timeline-duration"><i data-lucide="calendar"></i> 30–35 Days</div>
+              <ul class="timeline-details">
+                <li>Gained practical exposure to Java full-stack application development.</li>
+                <li>Worked with frontend, backend, database, and application integration.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card">
+              <h3 class="timeline-role">Java Full Stack Developer Intern</h3>
+              <div class="timeline-company">CKM Buildbase</div>
+              <div class="timeline-duration"><i data-lucide="calendar"></i> 30–35 Days</div>
+              <ul class="timeline-details">
+                <li>Gained hands-on exposure to Java-based full-stack development.</li>
+                <li>Worked with frontend, backend, database connectivity, and APIs.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>Featured Projects</span></h2>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: FeelSync -->
+          <div class="glass-card project-card">
+            <div class="project-visual">
+              <canvas id="feelsync-canvas"></canvas>
+              <div class="project-tag-badge"><i data-lucide="activity"></i> AI & Healthcare</div>
+            </div>
+
+            <h3 class="project-title">FeelSync</h3>
+            <div class="project-subtitle">AI-Based Real-Time Emotion Recognition and Mental Wellness Application</div>
+            
+            <p class="project-description">
+              "Developed an AI-based face and voice detection application for real-time emotion recognition and mental wellness."
+            </p>
+
+            <ul class="project-features">
+              <li><i data-lucide="check"></i> Facial expression analysis</li>
+              <li><i data-lucide="check"></i> Voice analysis</li>
+              <li><i data-lucide="check"></i> Emotion recognition</li>
+              <li><i data-lucide="check"></i> AI-based analysis</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">OpenCV</span>
+              <span class="tech-badge">DeepFace</span>
+              <span class="tech-badge">Librosa</span>
+              <span class="tech-badge">Pyttsx3</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-outline" onclick="openProjectModal('feelsync')" id="btn-project-feelsync">
+                <i data-lucide="info"></i> Project Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2: SentinalAI -->
+          <div class="glass-card project-card">
+            <div class="project-visual">
+              <canvas id="sentinal-canvas"></canvas>
+              <div class="project-tag-badge"><i data-lucide="shield-alert"></i> Cybersecurity AI</div>
+            </div>
+
+            <h3 class="project-title">SentinalAI</h3>
+            <div class="project-subtitle">AI-Powered Blackmail and Cybersecurity Threat Detection System</div>
+
+            <p class="project-description">
+              "Developed an AI-powered system for detecting potential blackmail attempts and cybersecurity threats."
+            </p>
+
+            <ul class="project-features">
+              <li><i data-lucide="check"></i> Suspicious pattern detection</li>
+              <li><i data-lucide="check"></i> Digital security risk identification</li>
+              <li><i data-lucide="check"></i> Threat analysis engine</li>
+              <li><i data-lucide="check"></i> AI-based analysis</li>
+            </ul>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">AI / ML</span>
+              <span class="tech-badge">Cybersecurity</span>
+              <span class="tech-badge">Pattern Matching</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-outline" onclick="openProjectModal('sentinalai')" id="btn-project-sentinalai">
+                <i data-lucide="info"></i> Project Details
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>Education</span></h2>
+
+        <div class="education-grid">
+          
+          <!-- College -->
+          <div class="glass-card edu-card">
+            <div class="edu-card-icon"><i data-lucide="building-2"></i></div>
+            <h3 class="edu-title">AVS Engineering College</h3>
+            <div class="edu-degree">B.E. Computer Science Engineering</div>
+            <div class="edu-year"><i data-lucide="calendar"></i> 2024 – 2028</div>
+            <div class="edu-grade"><i data-lucide="star"></i> CGPA: 8.2</div>
+          </div>
+
+          <!-- School -->
+          <div class="glass-card edu-card">
+            <div class="edu-card-icon"><i data-lucide="school"></i></div>
+            <h3 class="edu-title">Government Girls Higher Secondary School</h3>
+            <div class="edu-degree">Mallasamudram</div>
+            <div class="edu-year"><i data-lucide="award"></i> Academic Performance</div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+              <span class="edu-grade">12th Standard: 458 Marks</span>
+              <span class="edu-grade">10th Standard: 367 Marks</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>Certifications</span></h2>
+
+        <div class="cert-grid">
+          
+          <div class="glass-card cert-card">
+            <div class="cert-badge-icon"><i data-lucide="badge-check"></i></div>
+            <div>
+              <div class="cert-name">Python Programming</div>
+              <div class="cert-issuer">Master Mind Techno Solution</div>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card">
+            <div class="cert-badge-icon"><i data-lucide="shield-check"></i></div>
+            <div>
+              <div class="cert-name">Python Essentials 1</div>
+              <div class="cert-issuer">Cisco Networking Academy</div>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card">
+            <div class="cert-badge-icon"><i data-lucide="code-2"></i></div>
+            <div>
+              <div class="cert-name">Python with Flask</div>
+              <div class="cert-issuer">Master Mind Techno Solution</div>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card">
+            <div class="cert-badge-icon"><i data-lucide="coffee"></i></div>
+            <div>
+              <div class="cert-name">Advanced Java</div>
+              <div class="cert-issuer">Master Mind Techno Solution</div>
+            </div>
+          </div>
+
+          <div class="glass-card cert-card">
+            <div class="cert-badge-icon"><i data-lucide="database"></i></div>
+            <div>
+              <div class="cert-name">SQL Hiring Secrets Bootcamp</div>
+              <div class="cert-issuer">Novi Tech R&D</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>Curriculum Vitae / Resume</span></h2>
+
+        <div class="glass-card" style="max-width: 950px; margin: 0 auto; text-align: center; padding: 3.5rem 2rem;">
+          <div style="width: 70px; height: 70px; border-radius: 50%; background: linear-gradient(135deg, rgba(157, 78, 221, 0.2), rgba(0, 240, 255, 0.2)); border: 1px solid var(--accent-cyan); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);">
+            <i data-lucide="file-text" style="width: 32px; height: 32px; color: var(--accent-cyan);"></i>
+          </div>
+
+          <h3 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.75rem; color: #ffffff;">
+            BOUYASHREE R — Official Resume
+          </h3>
+
+          <p style="color: var(--text-muted); max-width: 680px; margin: 0 auto 2rem; font-size: 1.05rem; line-height: 1.7;">
+            Computer Science Engineering Student | Java Full Stack Developer & AI/ML Enthusiast. Inspect the interactive online document or export a clean, print-ready PDF version.
+          </p>
+
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <button onclick="openResumeModal()" class="btn btn-primary" id="btn-section-view-resume">
+              <i data-lucide="eye"></i> Interactive Resume View
+            </button>
+            <a href="assets/resume.html" target="_blank" class="btn btn-outline" id="btn-section-print-resume">
+              <i data-lucide="printer"></i> Print / Save PDF
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title"><span>Let's Build Something Together</span></h2>
+
+        <div class="contact-wrapper">
+          
+          <!-- Contact Left Details -->
+          <div>
+            <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;">
+              I'm always interested in learning, building meaningful projects, and exploring opportunities in software development and AI-driven solutions.
+            </p>
+
+            <div class="contact-info-list">
+              
+              <a href="mailto:bouyashreeraja@gmail.com" class="contact-item" id="contact-email-link">
+                <div class="contact-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">bouyashreeraja@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="tel:7598117754" class="contact-item" id="contact-phone-link">
+                <div class="contact-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <div class="contact-label">Phone</div>
+                  <div class="contact-value">7598117754</div>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/bouyashree-raja-a77353328" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin-link">
+                <div class="contact-icon"><i data-lucide="linkedin"></i></div>
+                <div>
+                  <div class="contact-label">LinkedIn</div>
+                  <div class="contact-value">linkedin.com/in/bouyashree-raja-a77353328</div>
+                </div>
+              </a>
+
+              <a href="https://github.com/bouyashreeraja-png" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-github-link">
+                <div class="contact-icon"><i data-lucide="github"></i></div>
+                <div>
+                  <div class="contact-label">GitHub</div>
+                  <div class="contact-value">github.com/bouyashreeraja-png</div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Contact Form Right -->
+          <div class="glass-card">
+            <form class="contact-form" id="contact-form">
+              
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="Opportunity / Project Collaboration">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Hi Bouyashree, I would love to connect regarding..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="justify-content: center; width: 100%;" id="btn-submit-message">
+                <i data-lucide="send"></i> Send Message
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        BOUYASHREE <span class="accent-text">R</span>
+      </div>
+      <div class="footer-tagline">
+        Computer Science Engineering Student | Java Full Stack | AI/ML
+      </div>
+      <div class="footer-copy">
+        © 2026 Bouyashree R. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL CONTAINER -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-container">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-notification" id="toast-notification">
+    <i data-lucide="sparkles" style="color: var(--accent-cyan);"></i>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- JavaScript Engines -->
+  <script src="js/background.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
